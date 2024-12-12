@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여행 필수 장비</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9fafb;
+            color: #333;
+        }
+
+        
+        header {
+            background-color: #dde1e7;
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            border-bottom: 2px solid #ccc;
+        }
+        .logo {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .logo img {
+            width: 150px;
+            cursor: pointer;
+        }
+        .nav {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .nav a {
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            transition: color 0.3s;
+        }
+        .nav a:hover {
+            color: #4A90E2;
+        }
+
+        
+        .section {
+            max-width: 1400px;
+            margin: 40px auto;
+            text-align: center;
+        }
+        .section-title {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            color: #4A90E2;
+        }
+
+       
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 30px;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            width: 100%;
+            height: 250px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+        .card .card-title {
+            background-color: #f1f1f1;
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        .card .card-description {
+            font-size: 18px;
+            color: #555;
+            text-align: center;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <a href="index.html" class="logo">
+            <img src="여행사_로고.png" >
+        </a>
+        <nav class="nav">
+            <a href="sea.html">바다여행 패키지</a>
+            <a href="space.html">우주여행 패키지</a>
+            <a href="time.html">시간여행 패키지</a>
+            <a href="review.html">솔직 리뷰</a>
+            <a href="essential.html">여행 필수 장비</a>
+        </nav>
+    </header>
+
+    
+    <div class="section">
+        <div class="section-title">여행 필수 장비</div>
+        <div class="card-container">
+            
+            <div class="card">
+                <img src="장비1.png" >
+                <div class="card-title">다목적 방수 백팩</div>
+                <div class="card-description">여행 중 필요한 모든 물건을 수납할 수 있는 넉넉한 공간과 가벼운 소재.</div>
+            </div>
+
+           
+            <div class="card">
+                <img src="장비2.png" >
+                <div class="card-title">소형 파워뱅크</div>
+                <div class="card-description">보통적으로 밖에 있는 시간이 많기 때문에 스마트 기기 충전을 위한 필수템으로, 용량 크기에 따라 여러 번 충전이 가능해요.</div>
+            </div>
+
+            
+            <div class="card">
+                <img src="장비3.png" >
+                <div class="card-title">여행용 구급상자</div>
+                <div class="card-description">여행지 어디에서든 깨끗한 물을 제공받기 위한 필수 아이템.</div>
+            </div>
+
+            
+            <div class="card">
+                <img src="장비4.png">
+                <div class="card-title">휴대용 번역기</div>
+                <div class="card-description">과거 사람들과의 의사소통이나 다른 행성 생물체와의 대화를 도와주는 다중 언어 번역기.<br>(여행사에서 제공)</div>
+            </div>
+
+            
+            <div class="card">
+                <img src="장비5.png" >
+                <div class="card-title">개인 정수기 물병</div>
+                <div class="card-description">물이 부족하거나 의심스러운 환경에서도 안전하게 물을 마실 수 있는 휴대용 필터 물병.
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="장비6.png" >
+                <div class="card-title">개인 보호 필드</div>
+                <div class="card-description">예상치 못한 위험(우주 미세운석, 심해 생물, 과거의 날씨)으로부터 보호해주는 휴대용 에너지 필드 생성기.<br>(여행사에서 제공)</div>
+            </div>
+            <div class="card">
+                <img src="장비7.png" >
+                <div class="card-title">다목적 스카프</div>
+                <div class="card-description">햇빛 가리개, 목 보호, 혹은 간이 타월로도 활용 가능한 다기능 스카프.</div>
+            </div>
+
+            <div class="card">
+                <img src="장비8.png ">
+                <div class="card-title">맞춤형 여행복</div>
+                <div class="card-description">바다에서는 방수 슈트, 우주에서는 우주복, 과거 여행에서는 시대별 전통 의상! 각 여행 환경에 맞는 복장이 필수예요.<br>(여행사에서 제공)</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

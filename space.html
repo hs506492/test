@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우주여행 패키지 상세 페이지</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef2f5;
+        }
+
+        
+        header {
+            background-color: #dde1e7;
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            border-bottom: 2px solid #ccc;
+        }
+        .logo {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .logo img {
+            width: 150px;
+            height: auto;
+            cursor: pointer;
+        }
+        .nav {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .nav a {
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            transition: color 0.3s;
+        }
+        .nav a:hover {
+            color: #4A90E2;
+        }
+
+       
+        .container {
+            max-width: 1400px;
+            margin: 50px auto;
+        }
+        .main-section {
+            display: flex;
+            gap: 30px;
+        }
+        .main-image {
+            flex: 3;
+        }
+        .main-image img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            max-height: 500px;
+            border-radius: 10px;
+        }
+        .details {
+            flex: 2;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .details h2 {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .details p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        .details ul {
+            list-style-type: disc;
+            padding-left: 30px;
+            margin-bottom: 25px;
+        }
+        .details ul li {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .details .song {
+            margin-top: 25px;
+            font-size: 18px;
+            font-style: italic;
+            color: #666;
+            display: flex;
+            align-items: center;
+        }
+        .details .song img {
+            width: 25px;
+            height: 25px;
+            margin-left: 10px;
+        }
+
+        
+        .gallery {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        .gallery a {
+            display: block;
+            width: calc(33.33% - 15px);
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            max-height: 250px;
+            object-fit: cover;
+            border-radius: 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <a href="index.html" class="logo">
+            <img src="여행사_로고.png">
+        </a>
+        <nav class="nav">
+            <a href="sea.html">바다여행 패키지</a>
+            <a href="space.html">우주여행 패키지</a>
+            <a href="time.html">시간여행 패키지</a>
+            <a href="review.html">솔직 리뷰</a>
+            <a href="essential.html">여행 필수 장비</a>
+        </nav>
+    </header>
+
+    
+    <div class="container">
+        <div class="main-section">
+            <div class="main-image">
+                <img src="우주1.png">
+            </div>
+            <div class="details">
+                <h2>우주여행 패키지</h2>
+                <p>
+                    우주로 떠나는 초호화 여행! 2500년, 인류를 넘어선 ‘지구’의 경계를 벗어난 새로운 모험.
+                    초광속 여행 기술로 태양계를 넘어 무한한 우주를 탐험하세요! 신비로운 블루타임 미지의 행성까지,
+                    직접 경험해보는 우주 모험이 당신을 기다립니다.
+                </p>
+                <ul>
+                    <li>DAY 1: 지구 궤도 이탈 및 우주 정거장 도착 → 무중력 체험</li>
+                    <li>DAY 2: 화성 탐사 및 우주 셔틀 탑승</li>
+                    <li>DAY 3: 외계 행성 관찰 및 블랙홀 생명체 탐험</li>
+                    <li>DAY 4: 행성형 피크닉 → 지구 귀환 준비</li>
+                </ul>
+                <div class="song">
+                    <img src="헤드셋.png">&nbsp; 
+                    여행하면서 듣기 좋은 노래: Coldplay - "A Sky Full of Stars"
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="gallery">
+            <a href="space1.html">
+                <img src="우주2.png">
+            </a>
+            <a href="space2.html">
+                <img src="우주3.png">
+            </a>
+            <a href="space3.html">
+                <img src="우주4.png" >
+            </a>
+        </div>
+    </div>
+</body>
+</html>

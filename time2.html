@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시간여행 패키지 상세 페이지</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef2f5;
+        }
+
+        
+        header {
+            background-color: #dde1e7;
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            border-bottom: 2px solid #ccc;
+        }
+        .logo {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .logo img {
+            width: 150px;
+            height: auto;
+            cursor: pointer;
+        }
+        .nav {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .nav a {
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            transition: color 0.3s;
+        }
+        .nav a:hover {
+            color: #4A90E2;
+        }
+
+       
+        .container {
+            max-width: 1400px;
+            margin: 50px auto;
+        }
+        .main-section {
+            display: flex;
+            gap: 30px;
+        }
+        .main-image {
+            flex: 3;
+        }
+        .main-image img {
+            width: 100%;
+            max-width: 800px; 
+            height: auto;
+            max-height: 500px;
+            border-radius: 10px;
+        }
+        .details {
+            flex: 2;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .details h2 {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .details p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        .details ul {
+            list-style-type: disc;
+            padding-left: 30px;
+            margin-bottom: 25px;
+        }
+        .details ul li {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .details .song {
+            margin-top: 25px;
+            font-size: 18px;
+            font-style: italic;
+            color: #666;
+            display: flex;
+            align-items: center;
+        }
+        .details .song img {
+            width: 25px;
+            height: 25px;
+            margin-left: 10px;
+        }
+
+        
+        .gallery {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        .gallery a {
+            display: block;
+            width: calc(33.33% - 15px);
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            max-height: 250px;
+            object-fit: cover;
+            border-radius: 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <a href="index.html" class="logo">
+            <img src="여행사_로고.png">
+        </a>
+        <nav class="nav">
+            <a href="sea.html">바다여행 패키지</a>
+            <a href="space.html">우주여행 패키지</a>
+            <a href="time.html">시간여행 패키지</a>
+            <a href="review.html">솔직 리뷰</a>
+            <a href="essential.html">여행 필수 장비</a>
+        </nav>
+    </header>
+
+    
+    <div class="container">
+        <div class="main-section">
+            <div class="main-image">
+                <img src="시간3.webp">
+            </div>
+            <div class="details">
+                <h2>시간여행 패키지</h2>
+                <p>
+                    역사속으로 떠나는 초호화 여행! 2500년, 한국의 전통과 미, 영국의 고풍스러운 중세 문화, 그리고 이집트의 신비로운 고대 문명을 체험하세요. 시간의 흐름을 거슬러, 각 시대와 장소에서 잊지 못할 순간을 경험할 기회가 당신을 기다립니다.
+                </p>
+                <ul>
+                    <li>DAY 1: 조선 시대 도착 → 한옥 마을 탐방 및 궁궐 연회 체험</li>
+                    <li>DAY 2: 중세 영국으로 이동 → 성 탐험, 기사 토너먼트 및 왕실 연회 참여</li>
+                    <li>DAY 3: 고대 이집트 도착 → 피라미드 건축 현장 탐방 및 나일강 유람</li>
+                    <li>DAY 4: 각 시간의 특별한 기념품 제작 및 귀환 준비</li>
+                       (살아있는 공룡을 볼 수 있는 기회!  coming soon..)
+                </ul>
+                <div class="song">
+                    <img src="헤드셋.png">&nbsp; 
+                    여행하면서 듣기 좋은 노래: Eurythmics - "Sweet Dreams"
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="gallery">
+            <a href="time3.html">
+                <img src="시간4.png">
+            </a>
+            <a href="time.html">
+                <img src="시간1.webp">
+            </a>
+            <a href="time1.html">
+                <img src="시간2.webp">
+            </a>
+        </div>
+    </div>
+</body>
+</html>

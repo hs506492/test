@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고객 솔직 리뷰</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef2f5;
+            color: #333;
+        }
+
+    
+        header {
+            background-color: #dde1e7;
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            border-bottom: 2px solid #ccc;
+        }
+        .logo {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .logo img {
+            width: 150px;
+            cursor: pointer;
+        }
+        .nav {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .nav a {
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            transition: color 0.3s;
+        }
+        .nav a:hover {
+            color: #4A90E2;
+        }
+
+        
+        .section {
+            max-width: 1400px;
+            margin: 40px auto;
+            text-align: center;
+        }
+        .section-title {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+      
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: nowrap;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 450px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 20px;
+            text-align: center;
+        }
+        .card-content .package {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .card-content .stars {
+            color: #FFD700;
+            margin-bottom: 10px;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+        .card-content .stars .name {
+            font-size: 16px;
+            color: #555;
+            font-weight: normal;
+        }
+        .card-content .review-text {
+            font-size: 18px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <a href="index.html" class="logo">
+            <img src="여행사_로고.png">
+        </a>
+        <nav class="nav">
+            <a href="sea.html">바다여행 패키지</a>
+            <a href="space.html">우주여행 패키지</a>
+            <a href="time.html">시간여행 패키지</a>
+            <a href="review.html">솔직 리뷰</a>
+            <a href="essential.html">여행 필수 장비</a>
+        </nav>
+    </header>
+
+ 
+    <div class="section">
+        <div class="section-title">고객 솔직 리뷰</div>
+        <div class="card-container">
+           
+            <div class="card">
+                <img src="우주5.png">
+                <div class="card-content">
+                    <div class="package">우주여행 패키지</div>
+                    <div class="stars">
+                        <span class="name">KIM경린</span>
+                        ★★★★☆
+                    </div>
+                    <div class="review-text">"우주에서 바라본 지구는 정말 아름다웠어요! 무중력 체험도 환상적이었습니다. 하지만 우주 음식은 제 입맛엔 맞지 않았어요 ㅜㅜ."</div>
+                </div>
+            </div>
+
+            
+            <div class="card">
+                <img src="바다5.png" >
+                <div class="card-content">
+                    <div class="package">바다여행 패키지</div>
+                    <div class="stars">
+                        <span class="name">pheonix 장</span>
+                        ★★★★☆
+                    </div>
+                    <div class="review-text">"초호화 해저 호텔에서의 숙박은 정말 놀라웠습니다. 창문 너머로 지나가는 해양 생물들을 보며 힐링할 수 있었어요. 특히 수중 드론을 직접 조종하며 심해를 탐험했던 순간이 가장 기억에 남습니다."</div>
+                </div>
+            </div>
+
+            
+            <div class="card">
+                <img src="시간5.png">
+                <div class="card-content">
+                    <div class="package">시간여행 패키지</div>
+                    <div class="stars">
+                        <span class="name">이연서</span>
+                        ★★★★★
+                    </div>
+                    <div class="review-text">"조선 시대 한복을 입고 궁궐 연회에 참석했을 때, 마치 역사 속 주인공이 된 기분이었어요. 한옥 마을의 따뜻한 분위기와 전통 시장은 정말 감동적이었습니다!"</div>
+                </div>
+            </div>
+
+            
+            <div class="card">
+                <img src="우주6.png">
+                <div class="card-content">
+                    <div class="package">우주여행 패키지</div>
+                    <div class="stars">
+                        <span class="name">Yeji KIM</span>
+                        ★★★★★
+                    </div>
+                    <div class="review-text">"꿈에 그리던 우주여행을!!! 서비스와 안전장치가 최고여서 우주 비행 내내 정말 안심하고 즐길 수 있었습니다! 돈이 아깝지 않은 여행이였습니다!"</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
